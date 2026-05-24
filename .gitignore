@@ -1,0 +1,30 @@
+# --- Global ---
+.DS_Store
+.vscode/
+.idea/
+.env
+
+# --- Backend (Django) ---
+# Ignore venv wherever it is (backend/venv or just venv)
+**/venv/
+**/env/
+**/.venv/
+
+# Python compiled files
+**/__pycache__/
+*.py[cod]
+
+# Django local DB
+db.sqlite3
+
+# --- Frontend (React/Next.js) ---
+# Ignore node_modules wherever it is
+**/node_modules/
+
+# Next.js build output
+**/.next/
+**/out/
+
+# --- Docker ---
+postgres_data/
+*.log
